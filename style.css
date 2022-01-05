@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/okean1.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shark {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%);
+    top: -70px;
+    width: 530px;
+    animation: fadeinshark 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeinshark {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.yellow-circle {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #046987;
+    border-radius: 250px 250px 0 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    animation: slidein 1s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    border-top: 15px solid #FFC83D;
+}
+@keyframes slidein {
+    from { bottom: -200px;}
+    to { bottom: 0px; }
+}
+.line {
+    height: 20px;
+    position: relative;
+    background-color: #FFC83D;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    z-index: 3;
+    animation: grow 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes grow {
+    from { width: 0px;}
+    to { width: 900px; }
+}
+.hero-text {
+    position: relative;
+    top: 20%;
+}
+.hero-text h1 {
+    font-size: 45pt;
+    position: relative;
+    z-index: 4;
+    animation: fadein 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from { opacity: 0; top: -20px;}
+    to { opacity: 1; top: 0px;}
+}
+.hero h1, h2 {
+    color: white;
+    font-weight: 900;
+}
+.nav {
+    height: 70px;
+    width: 100%;
+    background-color: #02335D;
+    position: relative;
+}
+.nav-items {
+    position: absolute;
+    right: 20px;
+}
+.nav-item {
+    display: inline-block;
+    position: relative;
+    top: 23px;
+}
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    bottom: 0;
+    font-size: 13pt;
+    font-weight: 500;
+    letter-spacing: 1pt;
+    transition: 0.3s;
+    padding: 25px 10px;
+}
+.nav-item a:hover {
+    background-color: #037684;
+    border-bottom: 4px solid white;
+}
+/********************************************/
+#paketi {
+    position: relative;
+    background-color: #046987;
+    z-index: 1;
+    padding: 200px 0px;
+}
+#paketi h1 {
+    position: relative;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.card-container {
+    padding: 20px;
+}
+.card {
+    width: 100%;
+    height: 430px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    transition: transform .2s
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card.middle {
+    height: 470px;
+}
+.card-top {
+    height: 100px;
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+}
+.blue {
+    background-color: #02335D;
+}
+.red {
+    background-color: #922544;
+}
+.yellow {
+    background-color: #DAA520;
+}
+.card-top h3 {
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.card-top h3 span{
+    color: white;
+    font-weight: 900;
+    font-size: 27pt;
+}
+.items {
+    margin: 30px auto;
+    left: -15px;
+    position: relative;
+    font-weight: 500;
+}
+.btn{
+    padding: 10px 0px;
+    width: 170px;
+    border-radius: 40px;
+    color: white;
+    position: absolute;
+    font-weight: 700;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.btn:hover{
+    cursor: pointer;
+    color: white;
+}
+/************************************************/
+.parallax {
+    height: 300px;
+    width: 100%;
+    background-image: url("./img/parallax.png");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax h1 {
+    color: white;
+    font-weight: 900;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.ostatak {
+    background-color: #044757;
+    width: 100%;
+    position: relative;
+    padding: 20px 0px;
+}
+.ostatak h2 {
+    z-index: 3;
+    color: white;
+    position: relative;
+    padding-top: 40px;
+}
+h3, h4 {
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+.contact-cont {
+    padding: 20px;
+}
+.contact-box {
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    transition: transform .2s;
+}
+.contact-box:hover {
+    transform: scale(1.1);
+}
+.icon-circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid white;
+    background-color: #037684;
+    margin: 20px auto;
+}
+h5 {
+    color: white;
+}
+.icons {
+    font-size: 40px;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/***************** RESPONSIVE ***************************/
+@media only screen and (max-width: 1200px) {
+   .hero-text h2 {
+       font-size: 18pt;
+   }
+}
+@media only screen and (max-width: 970px) {
+    .hero-text h1 {
+       font-size: 20pt;
+   }
+   .line {
+       height: 10px;
+       bottom: 20px;
+   }
+   .hero-text h2 {
+        font-size: 12pt;
+    }
+    @keyframes grow {
+        from { width: 0px;}
+        to { width: 400px; }
+    }
+    .nav-item a {
+        font-size: 11pt;
+        font-weight: 500;
+        letter-spacing: 0pt;
+        padding: 25px 5px;
+    }
+    h1 {
+        font-size: 18pt;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 16pt;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .shark {
+        width: 400px;
+        top: -50px;
+    }
+    .yellow-circle {
+        width: 250px;
+        height: 150px;
+        border-radius: 200px 200px 0 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .hero-text h1 {
+       font-size: 15pt;
+   }
+   .line {
+       height: 7px;
+       bottom: 17px;
+   }
+   .hero-text h2 {
+        font-size: 10pt;
+    }
+    @keyframes grow {
+        from { width: 0px;}
+        to { width: 320px; }
+    }
+    .shark {
+        width: 220px;
+        top: -30px;
+    }
+    .yellow-circle {
+        width: 200px;
+        height: 100px;
+        border-radius: 150px 150px 0 0;
+    }
+}
+
